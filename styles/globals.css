@@ -107,20 +107,6 @@ nav {
   width: 0 !important;
 }
 
-.tag-container ul::-webkit-scrollbar {
-  width: 0 !important;
-}
-
-.tag-container ul {
-  -ms-overflow-style: none;
-  overflow: -moz-scrollbars-none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  -khtml-user-select: none;
-  user-select: none;
-}
-
 @media (min-width: 768px) {
   .sticky-nav-full {
     @apply max-w-full border-b border-opacity-50 border-gray-200 dark:border-gray-600 dark:border-opacity-50;

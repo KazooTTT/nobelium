@@ -3,7 +3,7 @@ import { useConfig } from '@/lib/config'
 import FormattedDate from '@/components/FormattedDate'
 import TagItem from '@/components/TagItem'
 
-const BlogPost = ({ post }) => {
+const BlogPost = ({ post, currentTag }) => {
   const BLOG = useConfig()
 
   return (
@@ -21,7 +21,7 @@ const BlogPost = ({ post }) => {
           {post.tags && (
             <div className="flex flex-nowrap max-w-full overflow-x-auto article-tags">
               {post.tags.map(tag => (
-                <TagItem key={tag} tag={tag} />
+                <TagItem key={tag} tag={tag} currentTag={currentTag} />
               ))}
             </div>
           )}
